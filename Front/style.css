@@ -17,6 +17,10 @@
     font-family: "KyoboHandwriting2020A";
   }
   
+  a {
+    background: none;
+  }
+
   .nav-title {
     font-size: 2rem;
   }
