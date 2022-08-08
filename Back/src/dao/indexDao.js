@@ -86,3 +86,13 @@ exports.selectRestaurants = async function (connection,category) {
 
   return rows;
 };
+
+//회원가입
+exports.insertUsers = async function(connection,userID,password,nickname){
+  const Query = `insert into Users(userID,password,nickname) values (?,?,?);`
+  const Params = [userID,password,nickname];
+
+  const rows = await connection.query(Query,Params);
+
+  return rows;
+}

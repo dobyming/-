@@ -22,4 +22,6 @@ module.exports = function (app) {
   //레스토랑 전체 조회
   app.get("/restaurants",index.readRestaurants);
 
+  //회원가입
+  app.post("/sign-up",index.createUsers);
 };
