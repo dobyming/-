@@ -9,7 +9,7 @@
 
 */
 
-let url = "http://127.0.0.1:3000";
+let url = "https://www.foodmap.shop";
 
 const btnSignIn = document.querySelector("#signin");
 
