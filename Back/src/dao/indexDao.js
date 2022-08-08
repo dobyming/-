@@ -96,3 +96,13 @@ exports.insertUsers = async function(connection,userID,password,nickname){
 
   return rows;
 }
+
+//로그인 
+exports.isValidUsers = async function(connection,userID,password){
+  const Query = `select userIdx,nickname from Users where userID = ? and password = ? and status = 'A';`
+  const Params = [userID,password];
+
+  const rows = await connection.query(Query,Params);
+
+  return rows;
+}
